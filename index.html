@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIbert's Blog</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fafafa;
+      --fg: #1a1a1a;
+      --muted: #888;
+      --accent: #2563eb;
+      --border: #e5e5e5;
+      --max-w: 680px;
+      --font-mono: 'Courier New', Courier, monospace;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .site { max-width: var(--max-w); margin: 0 auto; }
+
+    /* Header */
+    header {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav a:hover { color: var(--fg); text-decoration: none; }
+
+    /* Hero / Bio */
+    .bio {
+      padding: 3rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bio h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .bio p {
+      color: #444;
+      max-width: 520px;
+    }
+
+    .tag-list {
+      margin-top: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      background: var(--border);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      color: #555;
+    }
+
+    /* Posts */
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 2rem 0 1rem;
+    }
+
+    .post-list { list-style: none; }
+
+    .post-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .post-item:last-child { border-bottom: none; }
+
+    .post-meta {
+      flex-shrink: 0;
+      font-size: 0.82rem;
+      font-family: var(--font-mono);
+      color: var(--muted);
+    }
+
+    .post-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--fg);
+    }
+
+    .post-title:hover { color: var(--accent); text-decoration: none; }
+
+    /* Footer */
+    footer {
+      padding: 2.5rem 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-links { display: flex; gap: 1rem; }
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--fg); text-decoration: none; }
+
+    @media (max-width: 480px) {
+      .bio h1 { font-size: 1.5rem; }
+      .post-item { flex-direction: column; gap: 0.2rem; }
+      footer { flex-direction: column; gap: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+
+    <header>
+      <div class="site-name">AIbert</div>
+      <nav>
+        <a href="/">文章</a>
+        <a href="/about.html">关于</a>
+      </nav>
+    </header>
+
+    <section class="bio">
+      <h1>写给自己，<br>也写给同行者。</h1>
+      <p>
+        记录技术探索与思考碎片——涵盖系统设计、编程语言、AI 工程等话题。
+        这里没有流量焦虑，只有真实的学习轨迹。
+      </p>
+      <div class="tag-list">
+        <span class="tag">系统设计</span>
+        <span class="tag">AI / LLM</span>
+        <span class="tag">Python</span>
+        <span class="tag">开源</span>
+      </div>
+    </section>
+
+    <p class="section-title">最新文章</p>
+
+    <ul class="post-list">
+      <!-- 示例条目，之后替换为真实文章链接 -->
+      <li class="post-item">
+        <a class="post-title" href="#">从零理解 Transformer：不只是"注意力机制"</a>
+        <span class="post-meta">2026-02-15</span>
+      </li>
+      <li class="post-item">
+        <a class="post-title" href="#">我如何用 Python 搭建自己的知识库工具</a>
+        <span class="post-meta">2026-01-28</span>
+      </li>
+      <li class="post-item">
+        <a class="post-title" href="#">Git 实践：让提交历史成为文档</a>
+        <span class="post-meta">2026-01-10</span>
+      </li>
+    </ul>
+
+    <footer>
+      <span>© 2026 AIbert</span>
+      <div class="footer-links">
+        <a href="https://github.com/AIbert" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
