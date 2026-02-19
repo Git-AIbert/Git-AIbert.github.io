@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://Git-AIbert.github.io/posts/hello-world.html</loc>
-    <lastmod>2026-02-19T02:54:11.475Z</lastmod>
+    <lastmod>2026-02-19T03:17:57.567Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Git-AIbert.github.io/about.html</loc>
+    <lastmod>2026-02-19T03:17:57.566Z</lastmod>
   </url>
   <url>
     <loc>https://Git-AIbert.github.io/index.html</loc>
-    <lastmod>2026-02-19T02:54:11.475Z</lastmod>
+    <lastmod>2026-02-19T03:17:57.567Z</lastmod>
   </url>
 </urlset>
