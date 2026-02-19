@@ -11,7 +11,7 @@ website:
   description: "Albert's personal technical blog"
   site-url: https://Git-AIbert.github.io
   title: "Albert's Notes"
-  favicon: assets/favicon.ico
+  favicon: assets/favicon.svg
   navbar: true
   comments:
     utterances:
