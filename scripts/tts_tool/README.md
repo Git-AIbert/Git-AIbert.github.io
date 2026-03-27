@@ -71,15 +71,15 @@ scripts/generate_post_audio.py
 生成一篇文章音频并更新播放器：
 
 ```bash
-python3 scripts/generate_post_audio.py "posts/1. 课程介绍.md" --device cuda
+python3 scripts/generate_post_audio.py "posts/death-course-01-课程介绍.md" --device cuda
 ```
 
 一次生成两篇文章音频并更新播放器：
 
 ```bash
 python3 scripts/generate_post_audio.py \
-  "posts/1. 课程介绍.md" \
-  "posts/2. 人的本质：二元论与物理主义.md" \
+  "posts/death-course-01-课程介绍.md" \
+  "posts/death-course-02-人的本质：二元论与物理主义.md" \
   --device cuda
 ```
 
@@ -87,7 +87,7 @@ python3 scripts/generate_post_audio.py \
 
 ```bash
 python3 scripts/generate_post_audio.py \
-  "posts/1. 课程介绍.md" \
+  "posts/death-course-01-课程介绍.md" \
   --device cuda \
   --audio-only
 ```
